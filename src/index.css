@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-crema: #F7F2EA;
+  --color-tarjeta: #FFFDFC;
+  --color-beige: #E8DCCF;
+  --color-durazno: #D9A18F;
+  --color-oliva: #A3A17A;
+  --color-vino: #754E50;
+  --color-texto: #39352F;
+  --font-sans: Inter, system-ui, sans-serif;
+  --shadow-soft: 0 8px 24px rgb(57 53 47 / 0.06);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--color-crema);
+    color: var(--color-texto);
+    font-family: Inter, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+
+  input,
+  select {
+    background-color: var(--color-tarjeta);
+    color: var(--color-texto);
+  }
+}
